@@ -1569,7 +1569,7 @@ function DiscordLib:Window(text)
 
 		UnderBar.Name = "UnderBar"
 		UnderBar.Parent = Notification
-		UnderBar.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+		UnderBar.BackgroundColor3 = Color3.fromRGB(22, 29, 50)
 		UnderBar.Position = UDim2.new(-0.000297061284, 0, 0.945048928, 0)
 		UnderBar.Size = UDim2.new(0, 346, 0, 10)
 
