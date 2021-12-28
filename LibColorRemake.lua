@@ -131,7 +131,7 @@ function DiscordLib:Window(text)
 	
 	TopFrameHolder.Name = "TopFrameHolder"
 	TopFrameHolder.Parent = TopFrame
-	TopFrameHolder.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+	TopFrameHolder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	TopFrameHolder.BackgroundTransparency = 1.000
 	TopFrameHolder.BorderSizePixel = 0
 	TopFrameHolder.Position = UDim2.new(-0.000658480625, 0, 0, 0)
@@ -198,7 +198,7 @@ function DiscordLib:Window(text)
 
 	Userpad.Name = "Userpad"
 	Userpad.Parent = TopFrameHolder
-	Userpad.BackgroundColor3 = Color3.fromRGB(41, 43, 47)
+	Userpad.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
 	Userpad.BorderSizePixel = 0
 	Userpad.Position = UDim2.new(0.106243297, 0, 15.9807148, 0)
 	Userpad.Size = UDim2.new(0, 179, 0, 43)
