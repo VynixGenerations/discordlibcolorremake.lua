@@ -426,7 +426,7 @@ function DiscordLib:Window(text)
 	CloseSettingsBtn.Name = "CloseSettingsBtn"
 	CloseSettingsBtn.Parent = SettingsHolder
 	CloseSettingsBtn.AnchorPoint = Vector2.new(0.5, 0.5)
-	CloseSettingsBtn.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	CloseSettingsBtn.BackgroundColor3 = Color3.fromRGB(113, 117, 123)
 	CloseSettingsBtn.Position = UDim2.new(0.952967286, 0, 0.0853333324, 0)
 	CloseSettingsBtn.Selectable = false
 	CloseSettingsBtn.Size = UDim2.new(0, 30, 0, 30)
