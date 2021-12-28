@@ -260,7 +260,7 @@ function DiscordLib:Window(text)
 
 	ServersHoldFrame.Name = "ServersHoldFrame"
 	ServersHoldFrame.Parent = MainFrame
-	ServersHoldFrame.BackgroundColor3 = Color3.fromRGB(98, 37, 209)
+	ServersHoldFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ServersHoldFrame.BackgroundTransparency = 1.000
 	ServersHoldFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
 	ServersHoldFrame.Size = UDim2.new(0, 71, 0, 396)
@@ -696,7 +696,7 @@ function DiscordLib:Window(text)
 		local NotificationHolder = Instance.new("TextButton")
 		NotificationHolder.Name = "NotificationHolder"
 		NotificationHolder.Parent = SettingsHolder
-		NotificationHolder.BackgroundColor3 = Color3.fromRGB(22,22,22)
+		NotificationHolder.BackgroundColor3 = Color3.fromRGB(0,0,0)
 		NotificationHolder.Position = UDim2.new(-0.00881057233, 0, -0.00266666664, 0)
 		NotificationHolder.Size = UDim2.new(0, 687, 0, 375)
 		NotificationHolder.AutoButtonColor = false
