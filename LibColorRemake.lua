@@ -527,7 +527,7 @@ function DiscordLib:Window(text)
 
 	UserPanel.Name = "UserPanel"
 	UserPanel.Parent = SettingsHolder
-	UserPanel.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+	UserPanel.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 	UserPanel.Position = UDim2.new(0.365638763, 0, 0.130666673, 0)
 	UserPanel.Size = UDim2.new(0, 362, 0, 164)
 
