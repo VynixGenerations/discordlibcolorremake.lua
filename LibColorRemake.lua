@@ -1529,7 +1529,7 @@ function DiscordLib:Window(text)
 
 		NotificationHolderMain.Name = "NotificationHolderMain"
 		NotificationHolderMain.Parent = MainFrame
-		NotificationHolderMain.BackgroundColor3 = Color3.fromRGB(170, 0, 170)
+		NotificationHolderMain.BackgroundColor3 = Color3.fromRGB(91, 93, 105)
 		NotificationHolderMain.BackgroundTransparency = 1
 		NotificationHolderMain.BorderSizePixel = 0
 		NotificationHolderMain.Position = UDim2.new(0, 0, 0.0560000017, 0)
@@ -1579,7 +1579,7 @@ function DiscordLib:Window(text)
 
 		UnderBarFrame.Name = "UnderBarFrame"
 		UnderBarFrame.Parent = UnderBar
-		UnderBarFrame.BackgroundColor3 = Color3.fromRGB(91, 93, 105)
+		UnderBarFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		UnderBarFrame.BorderSizePixel = 0
 		UnderBarFrame.Position = UDim2.new(-0.000297061284, 0, -3.76068449, 0)
 		UnderBarFrame.Size = UDim2.new(0, 346, 0, 40)
