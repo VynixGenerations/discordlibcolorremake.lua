@@ -205,7 +205,7 @@ function DiscordLib:Window(text)
 
 	UserIcon.Name = "UserIcon"
 	UserIcon.Parent = Userpad
-	UserIcon.BackgroundColor3 = Color3.fromRGB(31, 33, 36)
+	UserIcon.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 	UserIcon.BorderSizePixel = 0
 	UserIcon.Position = UDim2.new(0.0340000018, 0, 0.123999998, 0)
 	UserIcon.Size = UDim2.new(0, 32, 0, 32)
@@ -268,7 +268,7 @@ function DiscordLib:Window(text)
 	ServersHold.Name = "ServersHold"
 	ServersHold.Parent = ServersHoldFrame
 	ServersHold.Active = true
-	ServersHold.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ServersHold.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 	ServersHold.BackgroundTransparency = 1.000
 	ServersHold.BorderSizePixel = 0
 	ServersHold.Position = UDim2.new(-0.000359333731, 0, 0.0580808073, 0)
