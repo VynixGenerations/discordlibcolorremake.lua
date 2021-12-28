@@ -533,7 +533,7 @@ function DiscordLib:Window(text)
 
 	UserSettingsPad.Name = "UserSettingsPad"
 	UserSettingsPad.Parent = UserPanel
-	UserSettingsPad.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+	UserSettingsPad.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	UserSettingsPad.Position = UDim2.new(0.0331491716, 0, 0.568140388, 0)
 	UserSettingsPad.Size = UDim2.new(0, 337, 0, 56)
 
