@@ -409,7 +409,7 @@ function DiscordLib:Window(text)
 
 	Settings.Name = "Settings"
 	Settings.Parent = SettingsFrame
-	Settings.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Settings.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 	Settings.BorderSizePixel = 0
 	Settings.Position = UDim2.new(0, 0, 0.0530303046, 0)
 	Settings.Size = UDim2.new(0, 681, 0, 375)
@@ -426,7 +426,7 @@ function DiscordLib:Window(text)
 	CloseSettingsBtn.Name = "CloseSettingsBtn"
 	CloseSettingsBtn.Parent = SettingsHolder
 	CloseSettingsBtn.AnchorPoint = Vector2.new(0.5, 0.5)
-	CloseSettingsBtn.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	CloseSettingsBtn.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	CloseSettingsBtn.Position = UDim2.new(0.952967286, 0, 0.0853333324, 0)
 	CloseSettingsBtn.Selectable = false
 	CloseSettingsBtn.Size = UDim2.new(0, 30, 0, 30)
