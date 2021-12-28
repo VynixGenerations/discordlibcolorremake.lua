@@ -620,7 +620,7 @@ function DiscordLib:Window(text)
 
 	UserPanelUserIcon.Name = "UserPanelUserIcon"
 	UserPanelUserIcon.Parent = UserPanel
-	UserPanelUserIcon.BackgroundColor3 = Color3.fromRGB(31, 33, 36)
+	UserPanelUserIcon.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 	UserPanelUserIcon.BorderSizePixel = 0
 	UserPanelUserIcon.Position = UDim2.new(0.0340000018, 0, 0.074000001, 0)
 	UserPanelUserIcon.Size = UDim2.new(0, 71, 0, 71)
