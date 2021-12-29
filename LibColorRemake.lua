@@ -2312,7 +2312,7 @@ function DiscordLib:Window(text)
 
 				Slider.Name = "Slider"
 				Slider.Parent = ChannelHolder
-				Slider.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+				Slider.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 				Slider.BorderSizePixel = 0
 				Slider.Position = UDim2.new(0, 0, 0.216560602, 0)
 				Slider.Size = UDim2.new(0, 401, 0, 38)
