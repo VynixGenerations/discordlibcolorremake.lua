@@ -1065,7 +1065,7 @@ function DiscordLib:Window(text)
 
 	LeftFrame.Name = "LeftFrame"
 	LeftFrame.Parent = SettingsHolder
-	LeftFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+	LeftFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	LeftFrame.BorderSizePixel = 0
 	LeftFrame.Position = UDim2.new(0, 0, -0.000303059904, 0)
 	LeftFrame.Size = UDim2.new(0, 233, 0, 375)
