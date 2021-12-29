@@ -1826,14 +1826,14 @@ function DiscordLib:Window(text)
 		ChannelTitle.Position = UDim2.new(0.0862470865, 0, 0, 0)
 		ChannelTitle.Size = UDim2.new(0, 95, 0, 39)
 		ChannelTitle.Font = Enum.Font.GothamSemibold
-		ChannelTitle.Text = ""
+		ChannelTitle.Text = "★"
 		ChannelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 		ChannelTitle.TextSize = 15.000
 		ChannelTitle.TextXAlignment = Enum.TextXAlignment.Left
 
 		ChannelContentFrame.Name = "ChannelContentFrame"
 		ChannelContentFrame.Parent = ServerFrame
-		ChannelContentFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		ChannelContentFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 		ChannelContentFrame.BorderSizePixel = 0
 		ChannelContentFrame.ClipsDescendants = true
 		ChannelContentFrame.Position = UDim2.new(0.294561088, 0, 0.106338218, 0)
