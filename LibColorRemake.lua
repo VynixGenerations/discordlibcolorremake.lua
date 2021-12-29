@@ -1950,7 +1950,7 @@ function DiscordLib:Window(text)
 						TweenService:Create(
 							Server,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 = Color3.fromRGB(59, 0, 89)}
+							{BackgroundColor3 = Color3.fromRGB(255, 230, 38)}
 						):Play()
 						TweenService:Create(
 							v.ServerCorner,
@@ -2106,7 +2106,7 @@ function DiscordLib:Window(text)
 				for i, v in next, ServerChannelHolder:GetChildren() do
 					if v.ClassName == "TextButton" then
 						v.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-						v.ChannelBtnTitle.TextColor3 = Color3.fromRGB(255,255,255)
+						v.ChannelBtnTitle.TextColor3 = Color3.fromRGB()
 					end
 					ServerFrame.Visible = true
 				end
@@ -2200,7 +2200,7 @@ function DiscordLib:Window(text)
 				ToggleTitle.Size = UDim2.new(0, 200, 0, 30)
 				ToggleTitle.Font = Enum.Font.Gotham
 				ToggleTitle.Text = text
-				ToggleTitle.TextColor3 = Color3.fromRGB(255,255,255)
+				ToggleTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
 				ToggleTitle.TextSize = 14.000
 				ToggleTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2330,7 +2330,7 @@ function DiscordLib:Window(text)
 				SliderTitle.Size = UDim2.new(0, 200, 0, 27)
 				SliderTitle.Font = Enum.Font.Gotham
 				SliderTitle.Text = text
-				SliderTitle.TextColor3 = Color3.fromRGB(255,255,255)
+				SliderTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
 				SliderTitle.TextSize = 14.000
 				SliderTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2522,7 +2522,7 @@ function DiscordLib:Window(text)
 				DropdownTitle.Size = UDim2.new(0, 200, 0, 29)
 				DropdownTitle.Font = Enum.Font.Gotham
 				DropdownTitle.Text = text
-				DropdownTitle.TextColor3 = Color3.fromRGB(255,255,255)
+				DropdownTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
 				DropdownTitle.TextSize = 14.000
 				DropdownTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2557,7 +2557,7 @@ function DiscordLib:Window(text)
 				CurrentSelectedText.Size = UDim2.new(0, 193, 0, 32)
 				CurrentSelectedText.Font = Enum.Font.Gotham
 				CurrentSelectedText.Text = "..."
-				CurrentSelectedText.TextColor3 = Color3.fromRGB(255,255,255)
+				CurrentSelectedText.TextColor3 = Color3.fromRGB(212, 212, 212)
 				CurrentSelectedText.TextSize = 14.000
 				CurrentSelectedText.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2620,7 +2620,7 @@ function DiscordLib:Window(text)
 				DropItemHolderLabel.Size = UDim2.new(0, 193, 0, 13)
 				DropItemHolderLabel.Font = Enum.Font.Gotham
 				DropItemHolderLabel.Text = ""
-				DropItemHolderLabel.TextColor3 = Color3.fromRGB(255,255,255)
+				DropItemHolderLabel.TextColor3 = Color3.fromRGB(212, 212, 212)
 				DropItemHolderLabel.TextSize = 14.000
 				DropItemHolderLabel.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2695,7 +2695,7 @@ function DiscordLib:Window(text)
 					ItemText.Position = UDim2.new(0.0211081803, 0, 0, 0)
 					ItemText.Size = UDim2.new(0, 192, 0, 29)
 					ItemText.Font = Enum.Font.Gotham
-					ItemText.TextColor3 = Color3.fromRGB(255,255,255)
+					ItemText.TextColor3 = Color3.fromRGB(212, 212, 212)
 					ItemText.TextSize = 14.000
 					ItemText.TextXAlignment = Enum.TextXAlignment.Left
 					ItemText.Text = v
