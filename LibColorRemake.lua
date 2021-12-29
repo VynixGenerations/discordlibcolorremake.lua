@@ -1814,7 +1814,7 @@ function DiscordLib:Window(text)
 		Hashtag.Position = UDim2.new(0.0279720277, 0, 0, 0)
 		Hashtag.Size = UDim2.new(0, 19, 0, 39)
 		Hashtag.Font = Enum.Font.Gotham
-		Hashtag.Text = ""
+		Hashtag.Text = "★"
 		Hashtag.TextColor3 = Color3.fromRGB(114, 118, 125)
 		Hashtag.TextSize = 25.000
 
@@ -1826,7 +1826,7 @@ function DiscordLib:Window(text)
 		ChannelTitle.Position = UDim2.new(0.0862470865, 0, 0, 0)
 		ChannelTitle.Size = UDim2.new(0, 95, 0, 39)
 		ChannelTitle.Font = Enum.Font.GothamSemibold
-		ChannelTitle.Text = "★"
+		ChannelTitle.Text = ""
 		ChannelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 		ChannelTitle.TextSize = 15.000
 		ChannelTitle.TextXAlignment = Enum.TextXAlignment.Left
