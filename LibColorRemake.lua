@@ -1889,7 +1889,7 @@ function DiscordLib:Window(text)
 					TweenService:Create(
 						Server,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
+						{BackgroundColor3 = Color3.fromRGB(255, 230, 38)}
 					):Play()
 					TweenService:Create(
 						ServerBtnCorner,
@@ -1950,7 +1950,7 @@ function DiscordLib:Window(text)
 						TweenService:Create(
 							Server,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
+							{BackgroundColor3 = Color3.fromRGB(255, 230, 38)}
 						):Play()
 						TweenService:Create(
 							v.ServerCorner,
@@ -2240,12 +2240,12 @@ function DiscordLib:Window(text)
 						TweenService:Create(
 							Icon,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{ImageColor3 = Color3.fromRGB(67,181,129)}
+							{ImageColor3 = Color3.fromRGB(255,236,25)}
 						):Play()
 						TweenService:Create(
 							ToggleFrame,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 = Color3.fromRGB(255,236,129)}
+							{BackgroundColor3 = Color3.fromRGB(255,236,25)}
 						):Play()
 						ToggleFrameCircle:TweenPosition(UDim2.new(0.655, -5, 0.133000001, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 						TweenService:Create(
