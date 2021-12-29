@@ -1889,7 +1889,7 @@ function DiscordLib:Window(text)
 					TweenService:Create(
 						Server,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(255, 230, 38)}
+						{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
 					):Play()
 					TweenService:Create(
 						ServerBtnCorner,
@@ -1950,7 +1950,7 @@ function DiscordLib:Window(text)
 						TweenService:Create(
 							Server,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 = Color3.fromRGB(255, 230, 38)}
+							{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
 						):Play()
 						TweenService:Create(
 							v.ServerCorner,
@@ -1991,7 +1991,7 @@ function DiscordLib:Window(text)
 			TweenService:Create(
 				Server,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(255, 230, 38)}
+				{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
 			):Play()
 			TweenService:Create(
 				ServerBtnCorner,
@@ -2085,14 +2085,14 @@ function DiscordLib:Window(text)
 			ChannelBtn.MouseEnter:Connect(function()
 				if currentchanneltoggled ~= ChannelBtn.Name then
 				ChannelBtn.BackgroundColor3 = Color3.fromRGB(52,55,60)
-					ChannelBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+					ChannelBtnTitle.TextColor3 = Color3.fromRGB(220,221,222)
 				end
 			end)
 			
 			ChannelBtn.MouseLeave:Connect(function()
 				if currentchanneltoggled ~= ChannelBtn.Name then
 				ChannelBtn.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-				ChannelBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+				ChannelBtnTitle.TextColor3 = Color3.fromRGB(114, 118, 125)
 				end
 			end)
 			
@@ -2106,7 +2106,7 @@ function DiscordLib:Window(text)
 				for i, v in next, ServerChannelHolder:GetChildren() do
 					if v.ClassName == "TextButton" then
 						v.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-						v.ChannelBtnTitle.TextColor3 = Color3.fromRGB()
+						v.ChannelBtnTitle.TextColor3 = Color3.fromRGB(114, 118, 125)
 					end
 					ServerFrame.Visible = true
 				end
@@ -2182,7 +2182,7 @@ function DiscordLib:Window(text)
 
 				Toggle.Name = "Toggle"
 				Toggle.Parent = ChannelHolder
-				Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+				Toggle.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 				Toggle.BorderSizePixel = 0
 				Toggle.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
 				Toggle.Size = UDim2.new(0, 401, 0, 30)
@@ -2240,12 +2240,12 @@ function DiscordLib:Window(text)
 						TweenService:Create(
 							Icon,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{ImageColor3 = Color3.fromRGB(255,236,25)}
+							{ImageColor3 = Color3.fromRGB(67,181,129)}
 						):Play()
 						TweenService:Create(
 							ToggleFrame,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 = Color3.fromRGB(255,236,25)}
+							{BackgroundColor3 = Color3.fromRGB(255,236,129)}
 						):Play()
 						ToggleFrameCircle:TweenPosition(UDim2.new(0.655, -5, 0.133000001, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 						TweenService:Create(
