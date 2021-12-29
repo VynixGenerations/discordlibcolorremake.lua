@@ -2189,7 +2189,7 @@ function DiscordLib:Window(text)
 				Toggle.AutoButtonColor = false
 				Toggle.Font = Enum.Font.Gotham
 				Toggle.Text = ""
-				Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+				Toggle.TextColor3 = Color3.fromRGB(255,236,25)
 				Toggle.TextSize = 14.000
 
 				ToggleTitle.Name = "ToggleTitle"
@@ -2200,7 +2200,7 @@ function DiscordLib:Window(text)
 				ToggleTitle.Size = UDim2.new(0, 200, 0, 30)
 				ToggleTitle.Font = Enum.Font.Gotham
 				ToggleTitle.Text = text
-				ToggleTitle.TextColor3 = Color3.fromRGB(255,255,255)
+				ToggleTitle.TextColor3 = Color3.fromRGB(255,236,25)
 				ToggleTitle.TextSize = 14.000
 				ToggleTitle.TextXAlignment = Enum.TextXAlignment.Left
 
