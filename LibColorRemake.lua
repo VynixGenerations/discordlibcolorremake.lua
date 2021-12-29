@@ -1991,7 +1991,7 @@ function DiscordLib:Window(text)
 			TweenService:Create(
 				Server,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(114, 137, 228)}
+				{BackgroundColor3 = Color3.fromRGB(78, 0, 121)}
 			):Play()
 			TweenService:Create(
 				ServerBtnCorner,
@@ -2240,7 +2240,7 @@ function DiscordLib:Window(text)
 						TweenService:Create(
 							Icon,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{ImageColor3 = Color3.fromRGB(255,236,25)}
+							{ImageColor3 = Color3.fromRGB(78, 0, 121)}
 						):Play()
 						TweenService:Create(
 							ToggleFrame,
