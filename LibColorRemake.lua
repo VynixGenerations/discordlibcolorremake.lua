@@ -2182,7 +2182,7 @@ function DiscordLib:Window(text)
 
 				Toggle.Name = "Toggle"
 				Toggle.Parent = ChannelHolder
-				Toggle.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+				Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 				Toggle.BorderSizePixel = 0
 				Toggle.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
 				Toggle.Size = UDim2.new(0, 401, 0, 30)
