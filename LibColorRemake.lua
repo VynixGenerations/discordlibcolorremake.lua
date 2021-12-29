@@ -2085,14 +2085,14 @@ function DiscordLib:Window(text)
 			ChannelBtn.MouseEnter:Connect(function()
 				if currentchanneltoggled ~= ChannelBtn.Name then
 				ChannelBtn.BackgroundColor3 = Color3.fromRGB(52,55,60)
-					ChannelBtnTitle.TextColor3 = Color3.fromRGB(220,221,222)
+					ChannelBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				end
 			end)
 			
 			ChannelBtn.MouseLeave:Connect(function()
 				if currentchanneltoggled ~= ChannelBtn.Name then
 				ChannelBtn.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
-				ChannelBtnTitle.TextColor3 = Color3.fromRGB(114, 118, 125)
+				ChannelBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				end
 			end)
 			
