@@ -1889,7 +1889,7 @@ function DiscordLib:Window(text)
 					TweenService:Create(
 						Server,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(255, 230, 38)}
+						{BackgroundColor3 = Color3.fromRGB(59, 0, 89)}
 					):Play()
 					TweenService:Create(
 						ServerBtnCorner,
@@ -2189,7 +2189,7 @@ function DiscordLib:Window(text)
 				Toggle.AutoButtonColor = false
 				Toggle.Font = Enum.Font.Gotham
 				Toggle.Text = ""
-				Toggle.TextColor3 = Color3.fromRGB(255,236,25)
+				Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
 				Toggle.TextSize = 14.000
 
 				ToggleTitle.Name = "ToggleTitle"
@@ -2200,7 +2200,7 @@ function DiscordLib:Window(text)
 				ToggleTitle.Size = UDim2.new(0, 200, 0, 30)
 				ToggleTitle.Font = Enum.Font.Gotham
 				ToggleTitle.Text = text
-				ToggleTitle.TextColor3 = Color3.fromRGB(255,236,25)
+				ToggleTitle.TextColor3 = Color3.fromRGB(255,255,255)
 				ToggleTitle.TextSize = 14.000
 				ToggleTitle.TextXAlignment = Enum.TextXAlignment.Left
 
