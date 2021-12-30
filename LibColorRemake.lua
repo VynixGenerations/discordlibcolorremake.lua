@@ -640,7 +640,7 @@ function DiscordLib:Window(text)
 	UserPanelUserCircle.BackgroundTransparency = 1.000
 	UserPanelUserCircle.Size = UDim2.new(0, 71, 0, 71)
 	UserPanelUserCircle.Image = "rbxassetid://4031889928"
-	UserPanelUserCircle.ImageColor3 = Color3.fromRGB(30, 30, 30)
+	UserPanelUserCircle.ImageColor3 = Color3.fromRGB(47, 49, 54)
 
 	BlackFrame.Name = "BlackFrame"
 	BlackFrame.Parent = UserPanelUserIcon
