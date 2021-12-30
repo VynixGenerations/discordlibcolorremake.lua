@@ -227,7 +227,7 @@ function DiscordLib:Window(text)
 	UserCircleImage.BackgroundTransparency = 1.000
 	UserCircleImage.Size = UDim2.new(0, 32, 0, 32)
 	UserCircleImage.Image = "rbxassetid://4031889928"
-	UserCircleImage.ImageColor3 = Color3.fromRGB(41, 43, 47)
+	UserCircleImage.ImageColor3 = Color3.fromRGB(30, 30, 30)
 	
 	UserName.Name = "UserName"
 	UserName.Parent = Userpad
