@@ -343,7 +343,7 @@ function DiscordLib:Window(text)
 	
 	SettingsOpenBtn.Name = "SettingsOpenBtn"
 	SettingsOpenBtn.Parent = Userpad
-	SettingsOpenBtn.BackgroundColor3 = Color3.fromRGB(53, 56, 62)
+	SettingsOpenBtn.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 	SettingsOpenBtn.BackgroundTransparency = 1.000
 	SettingsOpenBtn.Position = UDim2.new(0.849161983, 0, 0.279069781, 0)
 	SettingsOpenBtn.Size = UDim2.new(0, 18, 0, 18)
@@ -620,7 +620,7 @@ function DiscordLib:Window(text)
 
 	UserPanelUserIcon.Name = "UserPanelUserIcon"
 	UserPanelUserIcon.Parent = UserPanel
-	UserPanelUserIcon.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+	UserPanelUserIcon.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 	UserPanelUserIcon.BorderSizePixel = 0
 	UserPanelUserIcon.Position = UDim2.new(0.0340000018, 0, 0.074000001, 0)
 	UserPanelUserIcon.Size = UDim2.new(0, 71, 0, 71)
@@ -640,7 +640,7 @@ function DiscordLib:Window(text)
 	UserPanelUserCircle.BackgroundTransparency = 1.000
 	UserPanelUserCircle.Size = UDim2.new(0, 71, 0, 71)
 	UserPanelUserCircle.Image = "rbxassetid://4031889928"
-	UserPanelUserCircle.ImageColor3 = Color3.fromRGB(47, 49, 54)
+	UserPanelUserCircle.ImageColor3 = Color3.fromRGB(30, 30, 30)
 
 	BlackFrame.Name = "BlackFrame"
 	BlackFrame.Parent = UserPanelUserIcon
