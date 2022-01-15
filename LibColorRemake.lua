@@ -227,7 +227,7 @@ function DiscordLib:Window(text)
 	UserCircleImage.BackgroundTransparency = 1.000
 	UserCircleImage.Size = UDim2.new(0, 32, 0, 32)
 	UserCircleImage.Image = "rbxassetid://4031889928"
-	UserCircleImage.ImageColor3 = Color3.fromRGB(30, 30, 30)
+	UserCircleImage.ImageColor3 = Color3.fromRGB(41, 43, 47)
 	
 	UserName.Name = "UserName"
 	UserName.Parent = Userpad
@@ -343,7 +343,7 @@ function DiscordLib:Window(text)
 	
 	SettingsOpenBtn.Name = "SettingsOpenBtn"
 	SettingsOpenBtn.Parent = Userpad
-	SettingsOpenBtn.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	SettingsOpenBtn.BackgroundColor3 = Color3.fromRGB(53, 56, 62)
 	SettingsOpenBtn.BackgroundTransparency = 1.000
 	SettingsOpenBtn.Position = UDim2.new(0.849161983, 0, 0.279069781, 0)
 	SettingsOpenBtn.Size = UDim2.new(0, 18, 0, 18)
@@ -620,7 +620,7 @@ function DiscordLib:Window(text)
 
 	UserPanelUserIcon.Name = "UserPanelUserIcon"
 	UserPanelUserIcon.Parent = UserPanel
-	UserPanelUserIcon.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	UserPanelUserIcon.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 	UserPanelUserIcon.BorderSizePixel = 0
 	UserPanelUserIcon.Position = UDim2.new(0.0340000018, 0, 0.074000001, 0)
 	UserPanelUserIcon.Size = UDim2.new(0, 71, 0, 71)
@@ -759,7 +759,7 @@ function DiscordLib:Window(text)
 
 		UnderBar.Name = "UnderBar"
 		UnderBar.Parent = AvatarChange
-		UnderBar.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+		UnderBar.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		UnderBar.Position = UDim2.new(-0.000297061284, 0, 0.945048928, 0)
 		UnderBar.Size = UDim2.new(0, 346, 0, 13)
 
@@ -769,7 +769,7 @@ function DiscordLib:Window(text)
 
 		UnderBarFrame.Name = "UnderBarFrame"
 		UnderBarFrame.Parent = UnderBar
-		UnderBarFrame.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+		UnderBarFrame.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
 		UnderBarFrame.BorderSizePixel = 0
 		UnderBarFrame.Position = UDim2.new(-0.000297061284, 0, -2.53846145, 0)
 		UnderBarFrame.Size = UDim2.new(0, 346, 0, 39)
@@ -2147,7 +2147,7 @@ function DiscordLib:Window(text)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(78, 0, 121)}
+						{BackgroundColor3 = Color3.fromRGB(103,123,196)}
 					):Play()
 				end)
 				
@@ -2165,7 +2165,7 @@ function DiscordLib:Window(text)
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(30,30,30)}
+						{BackgroundColor3 = Color3.fromRGB(78, 0, 121)}
 					):Play()
 				end)
 				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
@@ -3149,7 +3149,7 @@ function DiscordLib:Window(text)
 
 				Label.Name = "Label"
 				Label.Parent = ChannelHolder
-				Label.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+				Label.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 				Label.BorderSizePixel = 0
 				Label.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
 				Label.Size = UDim2.new(0, 401, 0, 30)
@@ -3182,7 +3182,7 @@ function DiscordLib:Window(text)
 
 				Keybind.Name = "Keybind"
 				Keybind.Parent = ChannelHolder
-				Keybind.BackgroundColor3 = Color3.fromRGB(47, 49, 54)
+				Keybind.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
 				Keybind.BorderSizePixel = 0
 				Keybind.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
 				Keybind.Size = UDim2.new(0, 401, 0, 30)
