@@ -198,7 +198,7 @@ function DiscordLib:Window(text)
 
 	Userpad.Name = "Userpad"
 	Userpad.Parent = TopFrameHolder
-	Userpad.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	Userpad.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
 	Userpad.BorderSizePixel = 0
 	Userpad.Position = UDim2.new(0.106243297, 0, 15.9807148, 0)
 	Userpad.Size = UDim2.new(0, 179, 0, 43)
@@ -1098,6 +1098,18 @@ function DiscordLib:Window(text)
 	MyAccountBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	MyAccountBtnTitle.TextSize = 14.000
 	MyAccountBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+	MyAccountSBtn.Name = "Customization"
+	MyAccountSBtn.Parent = LeftFrame
+	MyAccountSBtn.BackgroundColor3 = Color3.fromRGB(57, 60, 67)
+	MyAccountSBtn.BorderSizePixel = 0
+	MyAccountSBtn.Position = UDim2.new(0.271232396, 0, 0.101614028, 0)
+	MyAccountSBtn.Size = UDim2.new(0, 160, 0, 30)
+	MyAccountSBtn.AutoButtonColor = false
+	MyAccountSBtn.Font = Enum.Font.SourceSans
+	MyAccountSBtn.Text = ""
+	MyAccountSBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+	MyAccountSBtn.TextSize = 14.000
 
 	SettingsTitle.Name = "SettingsTitle"
 	SettingsTitle.Parent = LeftFrame
