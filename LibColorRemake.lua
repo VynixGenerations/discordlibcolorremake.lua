@@ -1099,18 +1099,6 @@ function DiscordLib:Window(text)
 	MyAccountBtnTitle.TextSize = 14.000
 	MyAccountBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
 
-	MyAccountSBtn.Name = "Customization"
-	MyAccountSBtn.Parent = LeftFrame
-	MyAccountSBtn.BackgroundColor3 = Color3.fromRGB(57, 60, 67)
-	MyAccountSBtn.BorderSizePixel = 0
-	MyAccountSBtn.Position = UDim2.new(0.271232396, 0, 0.101614028, 0)
-	MyAccountSBtn.Size = UDim2.new(0, 160, 0, 30)
-	MyAccountSBtn.AutoButtonColor = false
-	MyAccountSBtn.Font = Enum.Font.SourceSans
-	MyAccountSBtn.Text = ""
-	MyAccountSBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
-	MyAccountSBtn.TextSize = 14.000
-
 	SettingsTitle.Name = "SettingsTitle"
 	SettingsTitle.Parent = LeftFrame
 	SettingsTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
