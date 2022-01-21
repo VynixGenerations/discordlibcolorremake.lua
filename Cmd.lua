@@ -1,27 +1,9 @@
 --Vix--
 
--- Instances:
+local Library = {}
 
-local CmdUI = Instance.new("ScreenGui")
-local CmdBar = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local CmdTextBox = Instance.new("TextBox")
-local ClickEnter = Instance.new("TextLabel")
-local CmdFrame = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local PrefixSeperator2 = Instance.new("Frame")
-local CmdFrameScroll = Instance.new("ScrollingFrame")
-local UIListLayout = Instance.new("UIListLayout")
-local PrefixLabel = Instance.new("TextLabel")
-local PrefixSeperator = Instance.new("Frame")
-
-local AdminLib = {}
-
---Properties:
-function AdminLib:Main()
-    -- Instances:
-
-    local CmdUI = Instance.new("ScreenGui")
+function Library:CreateMain()	
+	local CmdUI = Instance.new("ScreenGui")
     local CmdBar = Instance.new("Frame")
     local UICorner = Instance.new("UICorner")
     local CmdTextBox = Instance.new("TextBox")
@@ -133,11 +115,11 @@ function AdminLib:Main()
     CmdFrame.ChildAdded:Connect(function()
         CmdFrameScroll.CanvasPosition = UDim2.new(0, 0, 0, CmdFrameScroll.UIListLayout.AbsoluteContentSize.Y)
     end)
-    
-    local Cmd = {}
-    
-    function Cmd:AddCmd(name)
-        local TextButton = Instance.new("TextButton")
+	
+	local mxLibrary = {}
+	
+	function mxLibrary:NewCmd(name)
+		local TextButton = Instance.new("TextButton")
         
         TextButton.Parent = CmdFrameScroll
         TextButton.BackgroundColor3 = Color3.new(255, 255, 255)
@@ -147,10 +129,10 @@ function AdminLib:Main()
         TextButton.Text = name
         TextButton.TextColor3 = Color3.new(191, 191, 191)
         TextButton.TextSize = 14
-    end
-    
-    return Cmd
+	end
+	
+	return mxLibrary;
 end
 
-return AdminLib;
+return Library;
 
