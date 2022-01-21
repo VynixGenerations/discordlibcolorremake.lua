@@ -11,9 +11,6 @@ local CmdFrame = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
 local PrefixSeperator2 = Instance.new("Frame")
 local CmdFrameScroll = Instance.new("ScrollingFrame")
-local cmd1 = Instance.new("TextLabel")
-local cmd2 = Instance.new("TextLabel")
-local cmd3 = Instance.new("TextLabel")
 local UIListLayout = Instance.new("UIListLayout")
 local PrefixLabel = Instance.new("TextLabel")
 local PrefixSeperator = Instance.new("Frame")
@@ -144,9 +141,11 @@ function AdminLib:Main()
         
         TextButton.Parent = CmdFrameScroll
         TextButton.BackgroundColor3 = Color3.new(255, 255, 255)
+        TextButton.Size = UDim2.new(0, 107,0, 31)
         TextButton.BackgroundTransparency = 1.000
         TextButton.Font = Enum.GothamSemibold
         TextButton.Text = name
+        TextButton.TextColor3 = Color3.new(191, 191, 191)
         TextButton.TextSize = 14
     end
     
