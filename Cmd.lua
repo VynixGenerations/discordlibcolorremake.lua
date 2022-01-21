@@ -143,7 +143,7 @@ function AdminLib:Main()
         TextButton.BackgroundColor3 = Color3.new(255, 255, 255)
         TextButton.Size = UDim2.new(0, 107,0, 31)
         TextButton.BackgroundTransparency = 1.000
-        TextButton.Font = Enum.GothamSemibold
+        TextButton.Font = Enum.Font.GothamSemibold
         TextButton.Text = name
         TextButton.TextColor3 = Color3.new(191, 191, 191)
         TextButton.TextSize = 14
