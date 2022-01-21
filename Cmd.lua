@@ -120,15 +120,18 @@ function Library:CreateMain()
 	
 	function mxLibrary:NewCmd(name)
 		local TextLabel = Instance.new("TextLabel")
-        
-        TextLabel.Parent = CmdFrameScroll
-        TextLabel.BackgroundColor3 = Color3.new(255, 255, 255)
-        TextLabel.Size = UDim2.new(0, 107,0, 31)
-        TextLabel.BackgroundTransparency = 1.000
-        TextLabel.Font = Enum.Font.GothamSemibold
-        TextLabel.Text = name
-        TextLabel.TextColor3 = Color3.new(191, 191, 191)
-        TextLabel.TextSize = 14
+		
+		TextLabel.Parent = CmdFrameScroll
+		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.BackgroundTransparency = 1.000
+		TextLabel.BorderSizePixel = 0
+		TextLabel.Position = UDim2.new(0.0029239729, 0, 0.0303030312, 0)
+		TextLabel.Size = UDim2.new(0, 32, 0, 29)
+		TextLabel.Font = Enum.Font.GothamBold
+		TextLabel.Text = name
+		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.TextSize = 22.000
+		Text.TextWrapped = true
 	end
 	
 	return mxLibrary;
