@@ -119,7 +119,7 @@ function Library:CreateMain()
 	local mxLibrary = {}
 	
 	function mxLibrary:NewCmd(name)
-		local TextButton = Instance.new("TextLabel")
+		local TextLabel = Instance.new("TextLabel")
         
         TextLabel.Parent = CmdFrameScroll
         TextLabel.BackgroundColor3 = Color3.new(255, 255, 255)
