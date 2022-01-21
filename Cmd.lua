@@ -141,7 +141,7 @@ function Library:CreateMain()
 			LabelTitle.Position = UDim2.new(0, 5, 0, 0)
 			LabelTitle.Size = UDim2.new(0, 200, 0, 30)
 			LabelTitle.Font = Enum.Font.GothamSemibold
-			LabelTitle.Text = Name
+			LabelTitle.Text = name
 			LabelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 			LabelTitle.TextSize = 14.000
 			LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
