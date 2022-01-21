@@ -119,20 +119,19 @@ function Library:CreateMain()
 	local mxLibrary = {}
 	
 	function mxLibrary:NewCmd(name)
-		local TextButton = Instance.new("TextButton")
+		local TextButton = Instance.new("TextLabel")
         
-        TextButton.Parent = CmdFrameScroll
-        TextButton.BackgroundColor3 = Color3.new(255, 255, 255)
-        TextButton.Size = UDim2.new(0, 107,0, 31)
-        TextButton.BackgroundTransparency = 1.000
-        TextButton.Font = Enum.Font.GothamSemibold
-        TextButton.Text = name
-        TextButton.TextColor3 = Color3.new(191, 191, 191)
-        TextButton.TextSize = 14
+        TextLabel.Parent = CmdFrameScroll
+        TextLabel.BackgroundColor3 = Color3.new(255, 255, 255)
+        TextLabel.Size = UDim2.new(0, 107,0, 31)
+        TextLabel.BackgroundTransparency = 1.000
+        TextLabel.Font = Enum.Font.GothamSemibold
+        TextLabel.Text = name
+        TextLabel.TextColor3 = Color3.new(191, 191, 191)
+        TextLabel.TextSize = 14
 	end
 	
 	return mxLibrary;
 end
 
 return Library;
-
