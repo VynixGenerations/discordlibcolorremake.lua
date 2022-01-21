@@ -119,19 +119,34 @@ function Library:CreateMain()
 	local mxLibrary = {}
 	
 	function mxLibrary:NewCmd(name)
-		local TextLabel = Instance.new("TextLabel")
-		
-		TextLabel.Parent = CmdFrameScroll
-		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel.BackgroundTransparency = 1.000
-		TextLabel.BorderSizePixel = 0
-		TextLabel.Position = UDim2.new(0.0029239729, 0, 0.0303030312, 0)
-		TextLabel.Size = UDim2.new(0, 32, 0, 29)
-		TextLabel.Font = Enum.Font.GothamBold
-		TextLabel.Text = name
-		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel.TextSize = 22.000
-		Text.TextWrapped = true
+		local Label = Instance.new("TextButton")
+		local LabelTitle = Instance.new("TextLabel")
+
+			Label.Name = "Label"
+			Label.Parent = CmdFrame
+			Label.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+			Label.BorderSizePixel = 0
+			Label.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
+			Label.Size = UDim2.new(0, 401, 0, 30)
+			Label.AutoButtonColor = false
+			Label.Font = Enum.Font.GothamSemibold
+			Label.Text = ""
+			Label.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Label.TextSize = 14.000
+
+			LabelTitle.Name = "LabelTitle"
+			LabelTitle.Parent = Label
+			LabelTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			LabelTitle.BackgroundTransparency = 1.000
+			LabelTitle.Position = UDim2.new(0, 5, 0, 0)
+			LabelTitle.Size = UDim2.new(0, 200, 0, 30)
+			LabelTitle.Font = Enum.Font.GothamSemibold
+			LabelTitle.Text = Name
+			LabelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+			LabelTitle.TextSize = 14.000
+			LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
+			
+			CmdFrameScroll.CanvasSize = UDim2.new(0,0,0 ,CmdFrameScroll.UIListLayout.AbsoluteContentSize.Y)
 	end
 	
 	return mxLibrary;
