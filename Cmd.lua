@@ -119,23 +119,10 @@ function Library:CreateMain()
 	local mxLibrary = {}
 	
 	function mxLibrary:NewCmd(name)
-		local Label = Instance.new("TextButton")
 		local LabelTitle = Instance.new("TextLabel")
-
-			Label.Name = "Label"
-			Label.Parent = CmdFrame
-			Label.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-			Label.BorderSizePixel = 0
-			Label.Position = UDim2.new(0.261979163, 0, 0.190789461, 0)
-			Label.Size = UDim2.new(0, 401, 0, 30)
-			Label.AutoButtonColor = false
-			Label.Font = Enum.Font.GothamSemibold
-			Label.Text = ""
-			Label.TextColor3 = Color3.fromRGB(255, 255, 255)
-			Label.TextSize = 14.000
-
+		
 			LabelTitle.Name = "LabelTitle"
-			LabelTitle.Parent = Label
+			LabelTitle.Parent = CmdFrame
 			LabelTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			LabelTitle.BackgroundTransparency = 1.000
 			LabelTitle.Position = UDim2.new(0, 5, 0, 0)
