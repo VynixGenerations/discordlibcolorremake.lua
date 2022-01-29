@@ -99,13 +99,6 @@ function DiscordLib:Window(text)
 	local MinimizeBtn = Instance.new("TextButton")
 	local MinimizeIcon = Instance.new("ImageLabel")
 	local ServersHolder = Instance.new("Folder")
-	local Userpad = Instance.new("Frame")
-	local UserIcon = Instance.new("Frame")
-	local UserIconCorner = Instance.new("UICorner")
-	local UserImage = Instance.new("ImageLabel")
-	local UserCircleImage = Instance.new("ImageLabel")
-	local UserName = Instance.new("TextLabel")
-	local UserTag = Instance.new("TextLabel")
 	local ServersHoldFrame = Instance.new("Frame")
 	local ServersHold = Instance.new("ScrollingFrame")
 	local ServersHoldLayout = Instance.new("UIListLayout")
@@ -195,68 +188,6 @@ function DiscordLib:Window(text)
 
 	ServersHolder.Name = "ServersHolder"
 	ServersHolder.Parent = TopFrameHolder
-
-	Userpad.Name = "Userpad"
-	Userpad.Parent = TopFrameHolder
-	Userpad.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-	Userpad.BorderSizePixel = 0
-	Userpad.Position = UDim2.new(0.106243297, 0, 15.9807148, 0)
-	Userpad.Size = UDim2.new(0, 179, 0, 43)
-
-	UserIcon.Name = "UserIcon"
-	UserIcon.Parent = Userpad
-	UserIcon.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-	UserIcon.BorderSizePixel = 0
-	UserIcon.Position = UDim2.new(0.0340000018, 0, 0.123999998, 0)
-	UserIcon.Size = UDim2.new(0, 32, 0, 32)
-
-	UserIconCorner.CornerRadius = UDim.new(1, 8)
-	UserIconCorner.Name = "UserIconCorner"
-	UserIconCorner.Parent = UserIcon
-
-	UserImage.Name = "UserImage"
-	UserImage.Parent = UserIcon
-	UserImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	UserImage.BackgroundTransparency = 1.000
-	UserImage.Size = UDim2.new(0, 32, 0, 32)
-	UserImage.Image = pfp 
-	
-	UserCircleImage.Name = "UserImage"
-	UserCircleImage.Parent = UserImage
-	UserCircleImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	UserCircleImage.BackgroundTransparency = 1.000
-	UserCircleImage.Size = UDim2.new(0, 32, 0, 32)
-	UserCircleImage.Image = "rbxassetid://4031889928"
-	UserCircleImage.ImageColor3 = Color3.fromRGB(30, 30, 30)
-	
-	UserName.Name = "UserName"
-	UserName.Parent = Userpad
-	UserName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	UserName.BackgroundTransparency = 1.000
-	UserName.BorderSizePixel = 0
-	UserName.Position = UDim2.new(0.230000004, 0, 0.115999997, 0)
-	UserName.Size = UDim2.new(0, 98, 0, 17)
-	UserName.Font = Enum.Font.GothamSemibold
-	UserName.TextColor3 = Color3.fromRGB(255, 255, 255)
-	UserName.TextSize = 13.000
-	UserName.TextXAlignment = Enum.TextXAlignment.Left
-	UserName.ClipsDescendants = true
-
-	UserTag.Name = "UserTag"
-	UserTag.Parent = Userpad
-	UserTag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	UserTag.BackgroundTransparency = 1.000
-	UserTag.BorderSizePixel = 0
-	UserTag.Position = UDim2.new(0.230000004, 0, 0.455000013, 0)
-	UserTag.Size = UDim2.new(0, 95, 0, 17)
-	UserTag.Font = Enum.Font.Gotham
-	UserTag.TextColor3 = Color3.fromRGB(255, 255, 255)
-	UserTag.TextSize = 13.000
-	UserTag.TextTransparency = 0.300
-	UserTag.TextXAlignment = Enum.TextXAlignment.Left
-	
-	UserName.Text = user
-	UserTag.Text = "#" .. tag
 
 	ServersHoldFrame.Name = "ServersHoldFrame"
 	ServersHoldFrame.Parent = MainFrame
@@ -1655,7 +1586,7 @@ function DiscordLib:Window(text)
 		end)
 	end
 
-	MakeDraggable(TopFrame, MainFrame)
+	MakeDraggable(TopFrame, MainFrame, LeftFrame)
 	ServersHoldPadding.PaddingLeft = UDim.new(0, 14)
 	local ServerHold = {}
 	function ServerHold:Server(text, img)
