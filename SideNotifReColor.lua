@@ -12,7 +12,7 @@ local Container = Instance.new("Frame");
 Container.Name = "Container";
 Container.Position = UDim2.new(0, 20, 0.5, -20);
 Container.Size = UDim2.new(0, 300, 0.5, 0);
-Container.BackgroundTransparency = .2;
+Container.BackgroundTransparency = 1;
 Container.Parent = NotifGui;
 
 local function Image(ID, Button)
