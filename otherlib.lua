@@ -22,6 +22,8 @@ local function SaveInfo()
 	writefile("discordlibinfo.txt", HttpService:JSONEncode(userinfo));
 end
 
+SaveInfo()
+
 if userinfo["Theme"] == "Japan" then 
 	MainFrame.BackgroundColor3 = Color3.fromRGB(250, 250, 250)
 	TopFrame.BackgroundColor3 = Color3.fromRGB(203, 203, 203)
@@ -33,10 +35,6 @@ if userinfo["Theme"] == "Japan" then
 	AlrightBtn.BackgroundColor3 = Color3.fromRGB(255, 183, 197)
 	ServerContentFrame.BackgroundColor3 = Color3.fromRGB(207, 207, 207)
 end
-
-
-
-
 
 
 local function MakeDraggable(topbarobject, object)
