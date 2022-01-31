@@ -18,7 +18,7 @@ Container.Parent = NotifGui;
 local function Image(ID, Button)
 	local NewImage = Instance.new(string.format("Image%s", Button and "Button" or "Label"));
 	NewImage.Image = ID;
-	NewImage.BackgroundTransparency = 1;
+	NewImage.BackgroundTransparency = .1;
 	return NewImage;
 end
 
