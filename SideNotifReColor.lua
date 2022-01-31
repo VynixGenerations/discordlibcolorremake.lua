@@ -18,7 +18,7 @@ Container.Parent = NotifGui;
 local function Image(ID, Button)
 	local NewImage = Instance.new(string.format("Image%s", Button and "Button" or "Label"));
 	NewImage.Image = ID;
-	NewImage.BackgroundTransparency = .4;
+	NewImage.BackgroundTransparency = 1;
 	return NewImage;
 end
 
@@ -27,7 +27,6 @@ local function Round2px()
 	NewImage.ScaleType = Enum.ScaleType.Slice;
 	NewImage.SliceCenter = Rect.new(2, 2, 298, 298);
 	NewImage.ImageColor3 = Color3.fromRGB(30, 30, 30);
-	NewImage.BackgroundTransparency = .4;
 	return NewImage;
 end
 
@@ -38,7 +37,6 @@ local function Shadow2px()
 	NewImage.Size = UDim2.fromScale(1, 1) + UDim2.fromOffset(30, 30);
 	NewImage.Position = -UDim2.fromOffset(15, 15);
 	NewImage.ImageColor3 = Color3.fromRGB(30, 30, 30);
-	NewImage.BackgroundTransparency = .4;
 	return NewImage;
 end
 
