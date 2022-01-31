@@ -11,14 +11,30 @@ local tag
 local userinfo = {}
 
 local themes = {
-	Light = {
+	MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+	TopFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+	TopFrameHolder.BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+	ServersHold.BackgroundColor3 = Color3.fromRGB(30, 30, 30),
+	HashtagLabel.Text = "#",
+	ChannelBtnHashtag.Text = "#",
+	NotificationHolderMain.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	AlrightBtn.BackgroundColor3 = Color3.fromRGB(78, 0, 121)
+}
+
+
+
+local themeList = {
+	JapanTheme = {
 		MainFrame.BackgroundColor3 = Color3.fromRGB(250, 250, 250),
 		TopFrame.BackgroundColor3 = Color3.fromRGB(203, 203, 203),
 		TopFrameHolder.BackgroundColor3 = Color3.fromRGB(203, 203, 203),
 		ServersHold.BackgroundColor3 = Color3.fromRGB(208, 208, 208),
-		HashtagLabel.Text = "",
-		ChannelBtnHashtag.Text = "",
+		HashtagLabel.Text = "花",
+		ChannelBtnHashtag.Text = "花",
 		NotificationHolderMain.BackgroundColor3 = Color3.fromRGB(213, 213, 213),
+		AlrightBtn.BackgroundColor3 = Color3.fromRGB(255, 183, 197),
+		ServerContentFrame.BackgroundColor3 = Color3.fromRGB(207, 207, 207),
+
 	}
 }
 
@@ -101,7 +117,10 @@ Discord.Name = "Discord"
 Discord.Parent = game.CoreGui
 Discord.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-function DiscordLib:Window(text)
+function DiscordLib:Window(text, theme)
+	if theme == "Japan" then
+		theme = themeList.JapanTheme
+	end
 	local currentservertoggled = ""
 	local minimized = false
 	local fs = false
@@ -1588,7 +1607,7 @@ function DiscordLib:Window(text)
 			TweenService:Create(
 				AlrightBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(103,123,196)}
+				{BackgroundColor3 = Color3.fromRGB(213, 213, 213)}
 			):Play()
 		end)
 
@@ -1596,7 +1615,7 @@ function DiscordLib:Window(text)
 			TweenService:Create(
 				AlrightBtn,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(78, 0, 121)}
+				{BackgroundColor3 = Color3.fromRGB(255, 183, 197)}
 			):Play()
 		end)
 	end
