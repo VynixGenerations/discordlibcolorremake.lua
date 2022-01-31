@@ -8,38 +8,8 @@ local HttpService = game:GetService("HttpService")
 local pfp
 local user
 local tag
+local theme
 local userinfo = {}
-
-local themes = {
-	MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0),
-	TopFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0),
-	TopFrameHolder.BackgroundColor3 = Color3.fromRGB(0, 0, 0),
-	ServersHold.BackgroundColor3 = Color3.fromRGB(30, 30, 30),
-	HashtagLabel.Text = "#",
-	ChannelBtnHashtag.Text = "#",
-	NotificationHolderMain.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	AlrightBtn.BackgroundColor3 = Color3.fromRGB(78, 0, 121)
-}
-
-
-
-local themeList = {
-	JapanTheme = {
-		MainFrame.BackgroundColor3 = Color3.fromRGB(250, 250, 250),
-		TopFrame.BackgroundColor3 = Color3.fromRGB(203, 203, 203),
-		TopFrameHolder.BackgroundColor3 = Color3.fromRGB(203, 203, 203),
-		ServersHold.BackgroundColor3 = Color3.fromRGB(208, 208, 208),
-		HashtagLabel.Text = "花",
-		ChannelBtnHashtag.Text = "花",
-		NotificationHolderMain.BackgroundColor3 = Color3.fromRGB(213, 213, 213),
-		AlrightBtn.BackgroundColor3 = Color3.fromRGB(255, 183, 197),
-		ServerContentFrame.BackgroundColor3 = Color3.fromRGB(207, 207, 207),
-
-	}
-}
-
-
-
 
 pcall(function()
 	userinfo = HttpService:JSONDecode(readfile("discordlibinfo.txt"));
@@ -48,13 +18,32 @@ end)
 pfp = userinfo["pfp"] or "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
 user =  userinfo["user"] or game.Players.LocalPlayer.Name
 tag = userinfo["tag"] or tostring(math.random(1000,9999))
+theme = userinfo["Theme"] or "None"
 
 local function SaveInfo()
 	userinfo["pfp"] = pfp
 	userinfo["user"] = user
 	userinfo["tag"] = tag
+	userinfo["Theme"] = theme
 	writefile("discordlibinfo.txt", HttpService:JSONEncode(userinfo));
 end
+
+if userinfo["Theme"] == "Japan" then
+	MainFrame.BackgroundColor3 = Color3.fromRGB(250, 250, 250),
+	TopFrame.BackgroundColor3 = Color3.fromRGB(203, 203, 203),
+	TopFrameHolder.BackgroundColor3 = Color3.fromRGB(203, 203, 203),
+	ServersHold.BackgroundColor3 = Color3.fromRGB(208, 208, 208),
+	HashtagLabel.Text = "花",
+	ChannelBtnHashtag.Text = "花",
+	NotificationHolderMain.BackgroundColor3 = Color3.fromRGB(213, 213, 213),
+	AlrightBtn.BackgroundColor3 = Color3.fromRGB(255, 183, 197),
+	ServerContentFrame.BackgroundColor3 = Color3.fromRGB(207, 207, 207),
+end
+
+
+
+
+
 
 local function MakeDraggable(topbarobject, object)
 	local Dragging = nil
@@ -117,10 +106,7 @@ Discord.Name = "Discord"
 Discord.Parent = game.CoreGui
 Discord.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-function DiscordLib:Window(text, theme)
-	if theme == "Japan" then
-		theme = themeList.JapanTheme
-	end
+function DiscordLib:Window(text)
 	local currentservertoggled = ""
 	local minimized = false
 	local fs = false
