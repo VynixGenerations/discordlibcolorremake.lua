@@ -11,18 +11,16 @@ local tag
 local userinfo = {}
 
 local themes = {
-    JapanTheme = {
-        MainFrame.BackgroundColor3 = Color3.fromRGB(250, 250, 250),
+	Light = {
+		MainFrame.BackgroundColor3 = Color3.fromRGB(250, 250, 250),
 		TopFrame.BackgroundColor3 = Color3.fromRGB(203, 203, 203),
 		TopFrameHolder.BackgroundColor3 = Color3.fromRGB(203, 203, 203),
 		ServersHold.BackgroundColor3 = Color3.fromRGB(208, 208, 208),
 		HashtagLabel.Text = "",
 		ChannelBtnHashtag.Text = "",
-		NotificationHolderMain.BackgroundColor3 = Color3.fromRGB(213, 213, 213)
-    }
+		NotificationHolderMain.BackgroundColor3 = Color3.fromRGB(213, 213, 213),
+	}
 }
-
-
 
 
 
