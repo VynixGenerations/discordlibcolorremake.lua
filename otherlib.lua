@@ -29,15 +29,11 @@ end
 SaveInfo()
 
 if userinfo["Theme"] == "Japan" then 
-	MainFrame.BackgroundColor3 = Color3.fromRGB(250, 250, 250)
-	TopFrame.BackgroundColor3 = Color3.fromRGB(203, 203, 203)
-	TopFrameHolder.BackgroundColor3 = Color3.fromRGB(203, 203, 203)
-	ServersHold.BackgroundColor3 = Color3.fromRGB(208, 208, 208)
+    MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	HashtagLabel.Text = "花"
 	ChannelBtnHashtag.Text = "花"
 	NotificationHolderMain.BackgroundColor3 = Color3.fromRGB(213, 213, 213)
 	AlrightBtn.BackgroundColor3 = Color3.fromRGB(255, 183, 197)
-	ServerContentFrame.BackgroundColor3 = Color3.fromRGB(207, 207, 207)
 end
 
 
