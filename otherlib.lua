@@ -28,15 +28,6 @@ end
 
 SaveInfo()
 
-if userinfo["Theme"] == "Japan" then
-    MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	HashtagLabel.Text = "花"
-	ChannelBtnHashtag.Text = "花"
-	NotificationHolderMain.BackgroundColor3 = Color3.fromRGB(213, 213, 213)
-	AlrightBtn.BackgroundColor3 = Color3.fromRGB(255, 183, 197)
-end
-
-
 local function MakeDraggable(topbarobject, object)
 	local Dragging = nil
 	local DragInput = nil
@@ -1256,6 +1247,10 @@ function DiscordLib:Window(text)
 		HashtagLabel.Text = "#"
 		HashtagLabel.TextColor3 = Color3.fromRGB(79, 82, 88)
 		HashtagLabel.TextSize = 16.000
+		
+		if userinfo["Theme"] == 'Japan' then
+		    HashtagLabel.Text = "花"
+		end
 
 		TagTextbox.Name = "TagTextbox"
 		TagTextbox.Parent = TextBoxFrame1
@@ -1987,6 +1982,10 @@ function DiscordLib:Window(text)
 			ChannelBtnHashtag.Text = "#"
 			ChannelBtnHashtag.TextColor3 = Color3.fromRGB(114, 118, 125)
 			ChannelBtnHashtag.TextSize = 21.000
+			
+			if userinfo['Theme'] == 'Japan' then
+			    ChannelBtnHashtag.Text = "花"
+			end
 
 			ChannelBtnTitle.Name = "ChannelBtnTitle"
 			ChannelBtnTitle.Parent = ChannelBtn
