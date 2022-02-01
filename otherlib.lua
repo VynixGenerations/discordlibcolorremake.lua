@@ -117,6 +117,10 @@ function DiscordLib:Window(text)
 	MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 	MainFrame.Size = UDim2.new(0, 681, 0, 396)
 
+	if userinfo['Theme'] == 'Japan' then
+		MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	end
+
 	TopFrame.Name = "TopFrame"
 	TopFrame.Parent = MainFrame
 	TopFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -158,6 +162,10 @@ function DiscordLib:Window(text)
 	CloseBtn.BorderSizePixel = 0
 	CloseBtn.AutoButtonColor = false
 
+	if userinfo['Theme'] == 'Japan' then
+		CloseBtn.BackgroundColor3 = Color3.fromRGB(171, 171, 171)
+	end
+
 	CloseIcon.Name = "CloseIcon"
 	CloseIcon.Parent = CloseBtn
 	CloseIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -179,6 +187,10 @@ function DiscordLib:Window(text)
 	MinimizeBtn.TextSize = 14.000
 	MinimizeBtn.BorderSizePixel = 0
 	MinimizeBtn.AutoButtonColor = false
+
+	if userinfo['Theme'] == 'Japan' then
+		MinimizeBtn.BackgroundColor3 = Color3.fromRGB(171, 171, 171)
+	end
 
 	MinimizeIcon.Name = "MinimizeLabel"
 	MinimizeIcon.Parent = MinimizeBtn
@@ -233,7 +245,11 @@ function DiscordLib:Window(text)
 
 	CloseBtn.MouseLeave:Connect(
 		function()
-			CloseBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+			if userinfo['Theme'] then
+				CloseBtn.BackgroundColor3 = Color3.fromRGB(171, 171, 171)
+			else
+				CloseBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+			end
 		end
 	)
 
@@ -245,7 +261,11 @@ function DiscordLib:Window(text)
 
 	MinimizeBtn.MouseLeave:Connect(
 		function()
-			MinimizeBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+			if userinfo['Theme'] then
+				MinimizeBtn.BackgroundColor3 = Color3.fromRGB(171, 171, 171)
+			else
+				MinimizeBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
+			end
 		end
 	)
 
