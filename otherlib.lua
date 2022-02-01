@@ -28,7 +28,7 @@ end
 
 SaveInfo()
 
-if userinfo["Theme"] == "Japan" then 
+if userinfo["Theme"] == "Japan" then
     MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	HashtagLabel.Text = "花"
 	ChannelBtnHashtag.Text = "花"
