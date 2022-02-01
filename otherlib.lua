@@ -1756,6 +1756,10 @@ function DiscordLib:Window(text)
 		Hashtag.TextColor3 = Color3.fromRGB(114, 118, 125)
 		Hashtag.TextSize = 25.000
 
+		if userinfo['Theme'] == 'Japan' then
+			Hashtag.Text = "花"
+		end
+
 		ChannelTitle.Name = "ChannelTitle"
 		ChannelTitle.Parent = ChannelTitleFrame
 		ChannelTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
